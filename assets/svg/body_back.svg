@@ -1,0 +1,213 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 800" width="340" height="800">
+<defs>
+  <radialGradient id="skinGrad" cx="50%" cy="40%" r="60%">
+    <stop offset="0%" stop-color="#F5CBA7"/>
+    <stop offset="60%" stop-color="#E8A87C"/>
+    <stop offset="100%" stop-color="#C8845A"/>
+  </radialGradient>
+  <radialGradient id="muscleOrange" cx="40%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#E8834A"/>
+    <stop offset="50%" stop-color="#C85A20"/>
+    <stop offset="100%" stop-color="#8B3A10"/>
+  </radialGradient>
+  <radialGradient id="musclePurple" cx="40%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#9B6FD4"/>
+    <stop offset="50%" stop-color="#7040B0"/>
+    <stop offset="100%" stop-color="#4A2080"/>
+  </radialGradient>
+  <radialGradient id="muscleTeal" cx="40%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#3ABFBF"/>
+    <stop offset="50%" stop-color="#1A8F8F"/>
+    <stop offset="100%" stop-color="#0A5F5F"/>
+  </radialGradient>
+  <radialGradient id="muscleGreen" cx="40%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#4DC87A"/>
+    <stop offset="50%" stop-color="#2A9A50"/>
+    <stop offset="100%" stop-color="#0A6030"/>
+  </radialGradient>
+  <radialGradient id="muscleMagenta" cx="40%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#E060C0"/>
+    <stop offset="50%" stop-color="#B03090"/>
+    <stop offset="100%" stop-color="#700060"/>
+  </radialGradient>
+  <radialGradient id="muscleBlue" cx="40%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#5090E8"/>
+    <stop offset="50%" stop-color="#2860C0"/>
+    <stop offset="100%" stop-color="#0A3080"/>
+  </radialGradient>
+  <radialGradient id="muscleRed" cx="40%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#E84040"/>
+    <stop offset="50%" stop-color="#B01010"/>
+    <stop offset="100%" stop-color="#700000"/>
+  </radialGradient>
+  <radialGradient id="muscleBrown" cx="40%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#C8956A"/>
+    <stop offset="50%" stop-color="#A06030"/>
+    <stop offset="100%" stop-color="#603010"/>
+  </radialGradient>
+  <style>
+    .outline { stroke: #1A0800; stroke-width: 1.2; stroke-linejoin: round; }
+    .thin    { stroke: #1A0800; stroke-width: 0.6; stroke-linejoin: round; }
+    .fiber   { stroke: rgba(255,255,255,0.25); stroke-width: 0.5; fill: none; }
+  </style>
+</defs>
+
+<!-- BODY SILHOUETTE BASE -->
+<path class="outline" fill="url(#skinGrad)"
+  d="M120,148 C90,152 68,162 58,180 C48,198 46,220 48,240
+     C50,260 52,280 50,300 C48,320 44,340 46,360
+     C48,380 56,395 70,405 C84,415 100,418 110,420
+     L110,460 C108,462 106,464 106,468
+     L234,468 C234,464 232,462 230,460
+     L230,420 C240,418 256,415 270,405
+     C284,395 292,380 294,360 C296,340 292,320 290,300
+     C288,280 290,260 292,240 C294,220 292,198 282,180
+     C272,162 250,152 220,148 Z"/>
+
+<!-- HEAD BACK -->
+<ellipse id="cranium_back" class="outline" fill="url(#skinGrad)" cx="170" cy="52" rx="52" ry="48"/>
+<ellipse class="thin" fill="#E8A87C" cx="118" cy="68" rx="8" ry="14"/>
+<ellipse class="thin" fill="#E8A87C" cx="222" cy="68" rx="8" ry="14"/>
+<!-- Occipital bump -->
+<path fill="#D4A070" stroke="#1A0800" stroke-width="0.6"
+  d="M140,72 C148,82 160,88 170,88 C180,88 192,82 200,72 C192,78 180,82 170,82 C160,82 148,78 140,72 Z"/>
+
+<!-- NECK BACK -->
+<path id="neck_back" class="outline" fill="url(#skinGrad)"
+  d="M148,124 C148,124 152,148 152,158 L188,158 C188,148 192,124 192,124 Z"/>
+
+<!--  TRAPEZIUS  -->
+<!-- Upper trap — wide diamond -->
+<path id="upper_trapezius" class="outline" fill="url(#muscleBrown)"
+  d="M148,126 L192,126
+     C210,132 240,148 256,168 C248,178 232,186 210,190
+     L170,196 L130,190
+     C108,186 92,178 84,168
+     C100,148 130,132 148,126 Z"/>
+<!-- Trap fiber lines -->
+<line class="fiber" x1="148" y1="130" x2="170" y2="196"/>
+<line class="fiber" x1="192" y1="130" x2="170" y2="196"/>
+<line class="fiber" x1="120" y1="160" x2="170" y2="196"/>
+<line class="fiber" x1="220" y1="160" x2="170" y2="196"/>
+
+<!-- Middle trap -->
+<path id="middle_trapezius" class="outline" fill="url(#muscleBrown)"
+  d="M84,168 C92,178 108,186 130,190 L170,196 L210,190
+     C232,186 248,178 256,168
+     L248,210 C232,220 206,226 170,228 C134,226 108,220 92,210 Z"/>
+<!-- Lower trap -->
+<path id="lower_trapezius" class="outline" fill="#8B6914"
+  d="M92,210 C108,220 134,226 170,228 C206,226 232,220 248,210
+     L240,260 C220,270 196,276 170,278 C144,276 120,270 100,260 Z"/>
+
+<!--  POSTERIOR DELTOID  -->
+<path id="posterior_deltoid_l" class="outline" fill="url(#muscleOrange)"
+  d="M84,168 C68,174 52,188 44,206 C40,218 42,234 50,242
+     C62,234 74,220 82,206 C90,194 92,180 88,170 Z"/>
+<path id="posterior_deltoid_r" class="outline" fill="url(#muscleOrange)"
+  d="M256,168 C272,174 288,188 296,206 C300,218 298,234 290,242
+     C278,234 266,220 258,206 C250,194 248,180 252,170 Z"/>
+
+<!--  INFRASPINATUS  -->
+<path id="infraspinatus_l" class="outline" fill="url(#muscleMagenta)"
+  d="M92,210 C78,222 70,242 72,264 C74,280 84,292 98,296
+     C110,286 116,268 114,248 C112,230 106,216 98,210 Z"/>
+<path id="infraspinatus_r" class="outline" fill="url(#muscleMagenta)"
+  d="M248,210 C262,222 270,242 268,264 C266,280 256,292 242,296
+     C230,286 224,268 226,248 C228,230 234,216 242,210 Z"/>
+<!-- Infra fiber lines -->
+<path class="fiber" d="M78,230 C90,226 102,226 112,230"/>
+<path class="fiber" d="M76,248 C88,244 102,244 112,248"/>
+<path class="fiber" d="M76,266 C88,262 102,262 112,266"/>
+<path class="fiber" d="M262,230 C250,226 238,226 228,230"/>
+<path class="fiber" d="M264,248 C252,244 238,244 228,248"/>
+<path class="fiber" d="M264,266 C252,262 238,262 228,266"/>
+
+<!--  TERES MINOR  -->
+<path id="teres_minor_l" class="outline" fill="url(#muscleMagenta)"
+  d="M50,242 C42,254 40,270 44,284 L62,288 C62,274 60,260 56,248 Z"/>
+<path id="teres_minor_r" class="outline" fill="url(#muscleMagenta)"
+  d="M290,242 C298,254 300,270 296,284 L278,288 C278,274 280,260 284,248 Z"/>
+
+<!--  TERES MAJOR  -->
+<path id="teres_major_l" class="outline" fill="url(#muscleRed)"
+  d="M44,284 C40,300 40,318 44,332 L62,334 C62,320 60,304 60,288 Z"/>
+<path id="teres_major_r" class="outline" fill="url(#muscleRed)"
+  d="M296,284 C300,300 300,318 296,332 L278,334 C278,320 280,304 280,288 Z"/>
+
+<!--  RHOMBOIDS  -->
+<path id="rhomboid_major_l" class="outline" fill="#9B4400"
+  d="M100,196 C92,210 90,228 92,244 L140,240 L140,196 Z"/>
+<path id="rhomboid_major_r" class="outline" fill="#9B4400"
+  d="M240,196 C248,210 250,228 248,244 L200,240 L200,196 Z"/>
+
+<!--  LATISSIMUS DORSI  -->
+<path id="latissimus_dorsi_l" class="outline" fill="url(#muscleOrange)"
+  d="M98,296 C80,316 68,346 66,378 C64,404 72,424 86,436
+     C102,428 114,408 118,382 C122,356 118,324 110,302 Z"/>
+<path id="latissimus_dorsi_r" class="outline" fill="url(#muscleOrange)"
+  d="M242,296 C260,316 272,346 274,378 C276,404 268,424 254,436
+     C238,428 226,408 222,382 C218,356 222,324 230,302 Z"/>
+<!-- Lat fiber lines -->
+<path class="fiber" d="M72,330 C88,320 104,320 116,330"/>
+<path class="fiber" d="M70,356 C86,346 106,346 118,356"/>
+<path class="fiber" d="M70,382 C86,372 108,372 120,382"/>
+<path class="fiber" d="M268,330 C252,320 236,320 224,330"/>
+<path class="fiber" d="M270,356 C254,346 234,346 222,356"/>
+<path class="fiber" d="M270,382 C254,372 232,372 220,382"/>
+
+<!--  ERECTOR SPINAE  -->
+<path id="erector_spinae_l" class="outline" fill="url(#muscleBrown)"
+  d="M140,196 L140,240 L140,440 L158,444 L158,196 Z"/>
+<path id="erector_spinae_r" class="outline" fill="url(#muscleBrown)"
+  d="M200,196 L200,240 L200,440 L182,444 L182,196 Z"/>
+<!-- Spine line -->
+<line stroke="#1A0800" stroke-width="1.2" opacity="0.5" x1="170" y1="196" x2="170" y2="444"/>
+
+<!--  TRICEPS  -->
+<!-- Long head L -->
+<path id="triceps_long_head_l" class="outline" fill="url(#muscleRed)"
+  d="M50,242 C36,258 28,280 28,306 C28,328 36,346 48,354
+     C62,344 72,324 74,300 C76,278 70,258 60,246 Z"/>
+<!-- Long head R -->
+<path id="triceps_long_head_r" class="outline" fill="url(#muscleRed)"
+  d="M290,242 C304,258 312,280 312,306 C312,328 304,346 292,354
+     C278,344 268,324 266,300 C264,278 270,258 280,246 Z"/>
+<!-- Lateral head L -->
+<path id="triceps_lateral_head_l" class="outline" fill="url(#muscleRed)"
+  d="M28,306 C22,322 22,340 26,354 L44,358 C42,344 40,328 40,312 Z"/>
+<!-- Lateral head R -->
+<path id="triceps_lateral_head_r" class="outline" fill="url(#muscleRed)"
+  d="M312,306 C318,322 318,340 314,354 L296,358 C298,344 300,328 300,312 Z"/>
+<!-- Medial head L -->
+<path id="triceps_medial_head_l" class="outline" fill="#DC143C"
+  d="M44,320 C38,334 38,350 42,362 L56,364 C54,352 52,338 52,324 Z"/>
+<!-- Medial head R -->
+<path id="triceps_medial_head_r" class="outline" fill="#DC143C"
+  d="M296,320 C302,334 302,350 298,362 L284,364 C286,352 288,338 288,324 Z"/>
+<!-- Tricep fiber lines -->
+<path class="fiber" d="M34,290 C44,280 56,280 66,290"/>
+<path class="fiber" d="M30,314 C42,304 58,304 68,314"/>
+<path class="fiber" d="M306,290 C296,280 284,280 274,290"/>
+<path class="fiber" d="M310,314 C298,304 282,304 272,314"/>
+
+<!--  FOREARM EXTENSORS  -->
+<path id="extensor_carpi_radialis_l" class="outline" fill="url(#muscleGreen)"
+  d="M48,354 C38,370 32,392 34,414 L52,418 C52,396 52,374 54,358 Z"/>
+<path id="extensor_carpi_radialis_r" class="outline" fill="url(#muscleGreen)"
+  d="M292,354 C302,370 308,392 306,414 L288,418 C288,396 288,374 286,358 Z"/>
+<path id="extensor_digitorum_back_l" class="outline" fill="url(#muscleGreen)"
+  d="M26,354 C16,372 14,398 16,420 L32,422 C30,400 30,376 32,358 Z"/>
+<path id="extensor_digitorum_back_r" class="outline" fill="url(#muscleGreen)"
+  d="M314,354 C324,372 326,398 324,420 L308,422 C310,400 310,376 308,358 Z"/>
+<path id="extensor_carpi_ulnaris_back_l" class="outline" fill="url(#muscleGreen)"
+  d="M14,420 C12,436 12,452 14,464 L30,466 C28,454 28,438 28,424 Z"/>
+<path id="extensor_carpi_ulnaris_back_r" class="outline" fill="url(#muscleGreen)"
+  d="M326,420 C328,436 328,452 326,464 L310,466 C312,454 312,438 312,424 Z"/>
+<!-- Wrist/hand back -->
+<path id="wrist_hand_back_l" class="outline" fill="url(#skinGrad)"
+  d="M14,464 C12,478 12,492 14,504 C18,514 28,520 38,520
+     C48,520 58,514 62,504 C66,492 66,478 64,464 Z"/>
+<path id="wrist_hand_back_r" class="outline" fill="url(#skinGrad)"
+  d="M326,464 C328,478 328,492 326,504 C322,514 312,520 302,520
+     C292,520 282,514 278,504 C274,492 274,478 276,464 Z"/>

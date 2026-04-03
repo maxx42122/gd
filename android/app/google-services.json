@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "507108324269",
+    "project_id": "technova-e4860",
+    "storage_bucket": "technova-e4860.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507108324269:android:641cfc3d1d1f789814e724",
+        "android_client_info": {
+          "package_name": "com.example.technova"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEf2wd13Xfx8vgsrULw8jzlvyCS5tac74"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

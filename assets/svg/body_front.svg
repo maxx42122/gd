@@ -1,0 +1,348 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 800" width="340" height="800">
+<defs>
+  <radialGradient id="skinGrad" cx="50%" cy="40%" r="60%">
+    <stop offset="0%" stop-color="#F5CBA7"/>
+    <stop offset="60%" stop-color="#E8A87C"/>
+    <stop offset="100%" stop-color="#C8845A"/>
+  </radialGradient>
+  <radialGradient id="muscleOrange" cx="40%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#E8834A"/>
+    <stop offset="50%" stop-color="#C85A20"/>
+    <stop offset="100%" stop-color="#8B3A10"/>
+  </radialGradient>
+  <radialGradient id="musclePurple" cx="40%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#9B6FD4"/>
+    <stop offset="50%" stop-color="#7040B0"/>
+    <stop offset="100%" stop-color="#4A2080"/>
+  </radialGradient>
+  <radialGradient id="muscleTeal" cx="40%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#3ABFBF"/>
+    <stop offset="50%" stop-color="#1A8F8F"/>
+    <stop offset="100%" stop-color="#0A5F5F"/>
+  </radialGradient>
+  <radialGradient id="muscleGreen" cx="40%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#4DC87A"/>
+    <stop offset="50%" stop-color="#2A9A50"/>
+    <stop offset="100%" stop-color="#0A6030"/>
+  </radialGradient>
+  <radialGradient id="muscleMagenta" cx="40%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#E060C0"/>
+    <stop offset="50%" stop-color="#B03090"/>
+    <stop offset="100%" stop-color="#700060"/>
+  </radialGradient>
+  <radialGradient id="muscleBlue" cx="40%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#5090E8"/>
+    <stop offset="50%" stop-color="#2860C0"/>
+    <stop offset="100%" stop-color="#0A3080"/>
+  </radialGradient>
+  <radialGradient id="muscleRed" cx="40%" cy="30%" r="65%">
+    <stop offset="0%" stop-color="#E84040"/>
+    <stop offset="50%" stop-color="#B01010"/>
+    <stop offset="100%" stop-color="#700000"/>
+  </radialGradient>
+  <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000040"/>
+  </filter>
+  <style>
+    .outline { stroke: #1A0800; stroke-width: 1.2; stroke-linejoin: round; }
+    .thin    { stroke: #1A0800; stroke-width: 0.6; stroke-linejoin: round; }
+    .fiber   { stroke: rgba(255,255,255,0.25); stroke-width: 0.5; fill: none; }
+  </style>
+</defs>
+
+<!--  BODY SILHOUETTE BASE (skin)  -->
+<!-- Torso base -->
+<path class="outline" fill="url(#skinGrad)"
+  d="M120,148 C90,152 68,162 58,180 C48,198 46,220 48,240
+     C50,260 52,280 50,300 C48,320 44,340 46,360
+     C48,380 56,395 70,405 C84,415 100,418 110,420
+     L110,460 C108,462 106,464 106,468
+     L234,468 C234,464 232,462 230,460
+     L230,420 C240,418 256,415 270,405
+     C284,395 292,380 294,360 C296,340 292,320 290,300
+     C288,280 290,260 292,240 C294,220 292,198 282,180
+     C272,162 250,152 220,148 Z"/>
+
+<!--  HEAD  -->
+<!-- Skull -->
+<ellipse id="cranium" class="outline" fill="url(#skinGrad)" cx="170" cy="52" rx="52" ry="48"/>
+<!-- Face / jaw -->
+<path id="face" class="outline" fill="url(#skinGrad)"
+  d="M128,52 C126,72 130,90 140,104 C150,118 160,126 170,128
+     C180,126 190,118 200,104 C210,90 214,72 212,52
+     C200,44 180,40 170,40 C160,40 140,44 128,52 Z"/>
+<!-- Ear L -->
+<ellipse class="thin" fill="#E8A87C" cx="118" cy="68" rx="8" ry="14"/>
+<!-- Ear R -->
+<ellipse class="thin" fill="#E8A87C" cx="222" cy="68" rx="8" ry="14"/>
+<!-- Eyes -->
+<ellipse fill="#3A2010" cx="152" cy="62" rx="8" ry="5"/>
+<ellipse fill="#3A2010" cx="188" cy="62" rx="8" ry="5"/>
+<ellipse fill="#FFFFFF" cx="154" cy="61" rx="2.5" ry="2"/>
+<ellipse fill="#FFFFFF" cx="190" cy="61" rx="2.5" ry="2"/>
+<!-- Eyebrows -->
+<path class="thin" fill="none" stroke="#3A2010" stroke-width="2.5" d="M144,54 C148,51 156,51 160,54"/>
+<path class="thin" fill="none" stroke="#3A2010" stroke-width="2.5" d="M180,54 C184,51 192,51 196,54"/>
+<!-- Nose -->
+<path fill="none" stroke="#C8845A" stroke-width="1.2"
+  d="M166,70 L162,84 C162,87 166,90 170,90 C174,90 178,87 178,84 L174,70"/>
+<!-- Mouth -->
+<path fill="none" stroke="#A05030" stroke-width="1.8" stroke-linecap="round"
+  d="M158,100 C162,106 178,106 182,100"/>
+<!-- Philtrum -->
+<path fill="none" stroke="#C8845A" stroke-width="0.8" d="M170,90 L170,100"/>
+
+<!--  NECK  -->
+<path id="neck" class="outline" fill="url(#skinGrad)"
+  d="M148,124 C148,124 152,148 152,158 L188,158 C188,148 192,124 192,124 Z"/>
+<!-- SCM L -->
+<path id="sternocleidomastoid_l" class="thin" fill="#C8956A"
+  d="M148,126 C140,132 132,142 128,158 L140,162 C144,148 150,136 154,128 Z"/>
+<!-- SCM R -->
+<path id="sternocleidomastoid_r" class="thin" fill="#C8956A"
+  d="M192,126 C200,132 208,142 212,158 L200,162 C196,148 190,136 186,128 Z"/>
+
+<!--  TRAPEZIUS (front visible)  -->
+<path id="trapezius_l" class="thin" fill="#CD853F"
+  d="M128,158 C112,164 96,172 84,186 L100,194 C112,182 126,174 140,168 Z"/>
+<path id="trapezius_r" class="thin" fill="#CD853F"
+  d="M212,158 C228,164 244,172 256,186 L240,194 C228,182 214,174 200,168 Z"/>
+
+<!--  ANTERIOR DELTOID  -->
+<path id="anterior_deltoid_l" class="outline" fill="url(#muscleOrange)"
+  d="M84,186 C68,192 52,206 44,224 C40,234 42,248 50,256
+     C60,248 72,238 82,228 C90,218 94,206 92,196 Z"/>
+<path id="anterior_deltoid_r" class="outline" fill="url(#muscleOrange)"
+  d="M256,186 C272,192 288,206 296,224 C300,234 298,248 290,256
+     C280,248 268,238 258,228 C250,218 246,206 248,196 Z"/>
+
+<!--  MEDIAL DELTOID  -->
+<path id="medial_deltoid_l" class="outline" fill="url(#muscleOrange)"
+  d="M50,256 C40,268 36,284 38,300 L56,304 C56,290 58,274 62,262 Z"/>
+<path id="medial_deltoid_r" class="outline" fill="url(#muscleOrange)"
+  d="M290,256 C300,268 304,284 302,300 L284,304 C284,290 282,274 278,262 Z"/>
+
+<!--  PECTORALIS MAJOR  -->
+<path id="pectoralis_major_l" class="outline" fill="url(#muscleOrange)"
+  d="M84,186 C100,174 130,168 170,170
+     L170,258 C152,266 130,268 110,260
+     C92,252 82,238 80,220 Z"/>
+<path id="pectoralis_major_r" class="outline" fill="url(#muscleOrange)"
+  d="M256,186 C240,174 210,168 170,170
+     L170,258 C188,266 210,268 230,260
+     C248,252 258,238 260,220 Z"/>
+<!-- Pec fiber lines -->
+<line class="fiber" x1="100" y1="200" x2="168" y2="220"/>
+<line class="fiber" x1="96" y1="214" x2="168" y2="232"/>
+<line class="fiber" x1="96" y1="228" x2="168" y2="244"/>
+<line class="fiber" x1="240" y1="200" x2="172" y2="220"/>
+<line class="fiber" x1="244" y1="214" x2="172" y2="232"/>
+<line class="fiber" x1="244" y1="228" x2="172" y2="244"/>
+<!-- Sternum line -->
+<line stroke="#1A0800" stroke-width="0.8" opacity="0.4" x1="170" y1="170" x2="170" y2="258"/>
+
+<!--  SERRATUS ANTERIOR  -->
+<path id="serratus_anterior_l" class="outline" fill="url(#muscleMagenta)"
+  d="M80,220 C68,234 62,256 64,278 C66,292 74,302 86,304
+     C96,296 100,278 100,260 C100,244 94,230 86,222 Z"/>
+<path id="serratus_anterior_r" class="outline" fill="url(#muscleMagenta)"
+  d="M260,220 C272,234 278,256 276,278 C274,292 266,302 254,304
+     C244,296 240,278 240,260 C240,244 246,230 254,222 Z"/>
+<!-- Serratus finger lines -->
+<path class="fiber" d="M68,240 C76,244 84,244 90,240"/>
+<path class="fiber" d="M66,254 C74,258 84,258 90,254"/>
+<path class="fiber" d="M66,268 C74,272 84,272 90,268"/>
+<path class="fiber" d="M272,240 C264,244 256,244 250,240"/>
+<path class="fiber" d="M274,254 C266,258 256,258 250,254"/>
+<path class="fiber" d="M274,268 C266,272 256,272 250,268"/>
+
+<!--  RECTUS ABDOMINIS  -->
+<path id="rectus_abdominis" class="outline" fill="url(#musclePurple)"
+  d="M126,258 C140,250 160,248 170,248 C180,248 200,250 214,258
+     L210,400 C196,410 182,414 170,414 C158,414 144,410 130,400 Z"/>
+<!-- 6-pack grid -->
+<line stroke="#1A0800" stroke-width="1" opacity="0.5" x1="130" y1="248" x2="210" y2="248"/>
+<line stroke="#1A0800" stroke-width="1" opacity="0.5" x1="128" y1="290" x2="212" y2="290"/>
+<line stroke="#1A0800" stroke-width="1" opacity="0.5" x1="128" y1="332" x2="212" y2="332"/>
+<line stroke="#1A0800" stroke-width="1" opacity="0.5" x1="128" y1="374" x2="212" y2="374"/>
+<line stroke="#1A0800" stroke-width="1" opacity="0.5" x1="170" y1="248" x2="170" y2="414"/>
+
+<!--  EXTERNAL OBLIQUE  -->
+<path id="external_oblique_l" class="outline" fill="url(#musclePurple)"
+  d="M86,304 C74,316 68,336 70,360 C72,380 82,398 96,408
+     L126,400 L126,258 C114,268 100,284 90,300 Z"/>
+<path id="external_oblique_r" class="outline" fill="url(#musclePurple)"
+  d="M254,304 C266,316 272,336 270,360 C268,380 258,398 244,408
+     L214,400 L214,258 C226,268 240,284 250,300 Z"/>
+<!-- Oblique fiber lines -->
+<line class="fiber" x1="76" y1="320" x2="120" y2="290"/>
+<line class="fiber" x1="74" y1="340" x2="118" y2="310"/>
+<line class="fiber" x1="74" y1="360" x2="118" y2="330"/>
+<line class="fiber" x1="264" y1="320" x2="220" y2="290"/>
+<line class="fiber" x1="266" y1="340" x2="222" y2="310"/>
+<line class="fiber" x1="266" y1="360" x2="222" y2="330"/>
+
+<!--  BICEPS BRACHII  -->
+<path id="biceps_brachii_l" class="outline" fill="url(#muscleOrange)"
+  d="M50,256 C36,270 28,292 28,316 C28,336 36,352 48,360
+     C62,350 72,332 74,310 C76,290 70,270 60,258 Z"/>
+<path id="biceps_brachii_r" class="outline" fill="url(#muscleOrange)"
+  d="M290,256 C304,270 312,292 312,316 C312,336 304,352 292,360
+     C278,350 268,332 266,310 C264,290 270,270 280,258 Z"/>
+<!-- Bicep peak line -->
+<path class="fiber" d="M34,300 C44,290 56,290 66,300"/>
+<path class="fiber" d="M314,300 C304,290 292,290 282,300"/>
+
+<!--  BRACHIALIS  -->
+<path id="brachialis_l" class="outline" fill="#B8860B"
+  d="M28,316 C24,330 24,346 28,358 L44,362 C42,350 40,336 40,322 Z"/>
+<path id="brachialis_r" class="outline" fill="#B8860B"
+  d="M312,316 C316,330 316,346 312,358 L296,362 C298,350 300,336 300,322 Z"/>
+
+<!--  FOREARM FLEXORS  -->
+<path id="flexor_carpi_radialis_l" class="outline" fill="url(#muscleRed)"
+  d="M48,360 C38,376 32,398 34,420 C36,436 42,448 50,454
+     L66,450 C62,436 58,416 58,396 C58,378 60,364 64,356 Z"/>
+<path id="flexor_carpi_radialis_r" class="outline" fill="url(#muscleRed)"
+  d="M292,360 C302,376 308,398 306,420 C304,436 298,448 290,454
+     L274,450 C278,436 282,416 282,396 C282,378 280,364 276,356 Z"/>
+<!-- Brachioradialis L -->
+<path id="brachioradialis_l" class="outline" fill="url(#muscleRed)"
+  d="M28,358 C20,374 18,396 20,416 L36,420 C36,400 36,380 38,362 Z"/>
+<path id="brachioradialis_r" class="outline" fill="url(#muscleRed)"
+  d="M312,358 C320,374 322,396 320,416 L304,420 C304,400 304,380 302,362 Z"/>
+<!-- Extensor carpi (green) L -->
+<path id="extensor_carpi_ulnaris_l" class="outline" fill="url(#muscleGreen)"
+  d="M24,358 C14,374 12,400 14,422 L28,424 C28,402 28,378 30,360 Z"/>
+<path id="extensor_carpi_ulnaris_r" class="outline" fill="url(#muscleGreen)"
+  d="M316,358 C326,374 328,400 326,422 L312,424 C312,402 312,378 310,360 Z"/>
+<!-- Wrist/Hand L -->
+<path id="wrist_hand_l" class="outline" fill="url(#skinGrad)"
+  d="M14,422 C12,436 12,450 14,462 C18,472 28,478 38,478
+     C48,478 58,472 62,462 C66,450 66,436 64,422 Z"/>
+<path id="wrist_hand_r" class="outline" fill="url(#skinGrad)"
+  d="M326,422 C328,436 328,450 326,462 C322,472 312,478 302,478
+     C292,478 282,472 278,462 C274,450 274,436 276,422 Z"/>
+
+<!--  ILIOPSOAS / HIP  -->
+<path id="iliopsoas_l" class="outline" fill="#6A0DAD"
+  d="M96,408 C86,418 80,432 80,448 L104,454 C106,440 108,426 110,414 Z"/>
+<path id="iliopsoas_r" class="outline" fill="#6A0DAD"
+  d="M244,408 C254,418 260,432 260,448 L236,454 C234,440 232,426 230,414 Z"/>
+<!-- TFL L -->
+<path id="tensor_fasciae_latae_l" class="outline" fill="url(#muscleBlue)"
+  d="M70,360 C60,376 56,400 58,424 L80,430 C80,408 80,386 82,368 Z"/>
+<path id="tensor_fasciae_latae_r" class="outline" fill="url(#muscleBlue)"
+  d="M270,360 C280,376 284,400 282,424 L260,430 C260,408 260,386 258,368 Z"/>
+
+<!--  QUADS  -->
+<!-- Vastus lateralis L -->
+<path id="vastus_lateralis_l" class="outline" fill="url(#musclePurple)"
+  d="M58,424 C44,444 38,472 40,504 C42,528 52,548 68,560
+     C84,552 96,534 100,510 C104,486 100,460 92,440 Z"/>
+<!-- Vastus lateralis R -->
+<path id="vastus_lateralis_r" class="outline" fill="url(#musclePurple)"
+  d="M282,424 C296,444 302,472 300,504 C298,528 288,548 272,560
+     C256,552 244,534 240,510 C236,486 240,460 248,440 Z"/>
+<!-- Rectus femoris L -->
+<path id="rectus_femoris_l" class="outline" fill="url(#musclePurple)"
+  d="M104,454 C98,474 96,500 98,526 C100,548 108,566 120,574
+     C132,566 140,548 142,524 C144,500 140,474 134,454 Z"/>
+<!-- Rectus femoris R -->
+<path id="rectus_femoris_r" class="outline" fill="url(#musclePurple)"
+  d="M236,454 C242,474 244,500 242,526 C240,548 232,566 220,574
+     C208,566 200,548 198,524 C196,500 200,474 206,454 Z"/>
+<!-- Vastus medialis L -->
+<path id="vastus_medialis_l" class="outline" fill="url(#musclePurple)"
+  d="M142,524 C144,548 140,570 130,582 C118,590 104,588 96,578
+     C92,564 92,546 98,530 C108,538 126,540 138,534 Z"/>
+<!-- Vastus medialis R -->
+<path id="vastus_medialis_r" class="outline" fill="url(#musclePurple)"
+  d="M198,524 C196,548 200,570 210,582 C222,590 236,588 244,578
+     C248,564 248,546 242,530 C232,538 214,540 202,534 Z"/>
+<!-- Quad fiber lines -->
+<path class="fiber" d="M60,450 C80,440 100,440 120,450"/>
+<path class="fiber" d="M56,480 C80,468 104,468 128,480"/>
+<path class="fiber" d="M54,510 C80,498 106,498 132,510"/>
+<path class="fiber" d="M280,450 C260,440 240,440 220,450"/>
+<path class="fiber" d="M284,480 C260,468 236,468 212,480"/>
+<path class="fiber" d="M286,510 C260,498 234,498 208,510"/>
+
+<!-- Sartorius L -->
+<path id="sartorius_l" class="outline" fill="url(#muscleTeal)"
+  d="M80,430 C76,454 76,480 78,508 C80,530 86,550 96,562
+     L108,558 C100,542 96,520 94,496 C92,472 92,448 94,428 Z"/>
+<!-- Sartorius R -->
+<path id="sartorius_r" class="outline" fill="url(#muscleTeal)"
+  d="M260,430 C264,454 264,480 262,508 C260,530 254,550 244,562
+     L232,558 C240,542 244,520 246,496 C248,472 248,448 246,428 Z"/>
+<!-- Adductor longus L -->
+<path id="adductor_longus_l" class="outline" fill="url(#muscleTeal)"
+  d="M110,414 C106,438 106,466 108,494 C110,516 116,534 126,544
+     L138,538 C130,524 126,504 124,480 C122,456 122,432 124,412 Z"/>
+<!-- Adductor longus R -->
+<path id="adductor_longus_r" class="outline" fill="url(#muscleTeal)"
+  d="M230,414 C234,438 234,466 232,494 C230,516 224,534 214,544
+     L202,538 C210,524 214,504 216,480 C218,456 218,432 216,412 Z"/>
+<!-- Gracilis L -->
+<path id="gracilis_l" class="outline" fill="url(#muscleGreen)"
+  d="M124,412 C122,436 122,464 124,492 C126,514 132,534 140,546
+     L148,542 C142,528 138,508 136,484 C134,460 134,436 136,414 Z"/>
+<!-- Gracilis R -->
+<path id="gracilis_r" class="outline" fill="url(#muscleGreen)"
+  d="M216,412 C218,436 218,464 216,492 C214,514 208,534 200,546
+     L192,542 C198,528 202,508 204,484 C206,460 206,436 204,414 Z"/>
+
+<!--  PATELLA  -->
+<ellipse id="patella_l" class="outline" fill="#D4A870" cx="110" cy="582" rx="20" ry="14"/>
+<ellipse id="patella_r" class="outline" fill="#D4A870" cx="230" cy="582" rx="20" ry="14"/>
+
+<!--  LOWER LEG  -->
+<!-- Tibialis anterior L -->
+<path id="tibialis_anterior_l" class="outline" fill="url(#muscleGreen)"
+  d="M90,596 C82,616 78,644 80,672 C82,694 90,710 102,718
+     C112,710 118,694 118,670 C118,646 112,622 104,604 Z"/>
+<!-- Tibialis anterior R -->
+<path id="tibialis_anterior_r" class="outline" fill="url(#muscleGreen)"
+  d="M250,596 C258,616 262,644 260,672 C258,694 250,710 238,718
+     C228,710 222,694 222,670 C222,646 228,622 236,604 Z"/>
+<!-- Peroneus longus L -->
+<path id="peroneus_longus_l" class="outline" fill="url(#muscleTeal)"
+  d="M76,598 C66,620 62,650 64,678 C66,700 74,716 86,722
+     L96,718 C86,708 80,692 78,668 C76,644 78,618 84,598 Z"/>
+<!-- Peroneus longus R -->
+<path id="peroneus_longus_r" class="outline" fill="url(#muscleTeal)"
+  d="M264,598 C274,620 278,650 276,678 C274,700 266,716 254,722
+     L244,718 C254,708 260,692 262,668 C264,644 262,618 256,598 Z"/>
+<!-- Gastrocnemius L (front edge) -->
+<path id="gastrocnemius_l" class="outline" fill="url(#muscleTeal)"
+  d="M118,596 C124,618 126,648 124,676 C122,698 116,714 106,722
+     L96,718 C104,708 108,692 110,668 C112,644 112,618 108,598 Z"/>
+<!-- Gastrocnemius R (front edge) -->
+<path id="gastrocnemius_r" class="outline" fill="url(#muscleTeal)"
+  d="M222,596 C216,618 214,648 216,676 C218,698 224,714 234,722
+     L244,718 C236,708 232,692 230,668 C228,644 228,618 232,598 Z"/>
+<!-- Soleus L -->
+<path id="soleus_l" class="outline" fill="url(#muscleTeal)"
+  d="M86,722 C82,740 82,760 86,778 C90,792 100,800 112,802
+     C122,798 130,788 132,774 C134,758 132,740 128,724 Z"/>
+<!-- Soleus R -->
+<path id="soleus_r" class="outline" fill="url(#muscleTeal)"
+  d="M254,722 C258,740 258,760 254,778 C250,792 240,800 228,802
+     C218,798 210,788 208,774 C206,758 208,740 212,724 Z"/>
+<!-- Extensor digitorum longus L -->
+<path id="extensor_digitorum_longus_l" class="outline" fill="url(#muscleGreen)"
+  d="M104,604 C108,626 110,654 108,680 L118,682 C120,656 118,628 116,606 Z"/>
+<!-- Extensor digitorum longus R -->
+<path id="extensor_digitorum_longus_r" class="outline" fill="url(#muscleGreen)"
+  d="M236,604 C232,626 230,654 232,680 L222,682 C220,656 222,628 224,606 Z"/>
+
+<!--  FEET  -->
+<path id="ankle_foot_l" class="outline" fill="url(#skinGrad)"
+  d="M80,800 C76,810 76,820 80,828 C86,836 100,840 116,840
+     C132,840 144,836 148,828 C152,820 150,810 146,800 Z"/>
+<path id="ankle_foot_r" class="outline" fill="url(#skinGrad)"
+  d="M260,800 C264,810 264,820 260,828 C254,836 240,840 224,840
+     C208,840 196,836 192,828 C188,820 190,810 194,800 Z"/>
+
+</svg>

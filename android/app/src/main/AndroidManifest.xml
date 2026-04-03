@@ -1,4 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Microphone for speech-to-text -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- Internet for Firebase -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Required by permission_handler to check/request permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
     <application
         android:label="technova"
         android:name="${applicationName}"
